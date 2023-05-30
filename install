@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+
+if ! command -v brew &> /dev/null; then
+  echo "Homebrew isn't installed. Go install that first: https://brew.sh/"
+  exit 1
+fi
+
+echo "Installing XCode dev tools..."
+xcode-select --install
+
+echo "Installing Homebrew casks..."
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask sequel-ace
+brew install --cask tableplus
+brew install --cask google-chrome
+brew install --cask spotify
+brew install --cask slack
+brew install --cask discord
+brew install --cask messenger # Facebook Messenger
+brew install --cask whatsapp
+brew install --cask 1password
+brew install --cask alfred
+
+echo "Done"
