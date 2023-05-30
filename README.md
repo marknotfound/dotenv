@@ -3,7 +3,7 @@ A new dotenv repo for 2023 and beyond.
 
 ## Notes to future self
 1. This assumes `zsh`.
-2. Install Homebrew manually.
+2. Install [Homebrew](https://brew.sh/) manually.
 3. Manually move files from `configs` into appropriate places or symlink if feeling spicy.
 4. To install homebrew packages/casks/other `chmod +x install && ./install`
 5. This does not install [Docker for Mac](https://docs.docker.com/desktop/install/mac-install/)
