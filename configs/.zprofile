@@ -13,6 +13,6 @@ alias gitset="git reset --hard HEAD"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # PATH updates
-export PATH="/Users/mark/.local/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 export PATH=~/.npm-global/bin:$PATH
 export PATH=$(pyenv root)/shims:$PATH

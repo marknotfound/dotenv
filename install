@@ -9,6 +9,21 @@ fi
 echo "Installing XCode dev tools..."
 xcode-select --install
 
+
+echo "Updating Homebrew..."
+brew update
+
+echo "Installing Homebrew packages..."
+brew install pyenv
+brew install node
+brew install go
+brew install rust
+
+echo "Setting up npm global dir (~/.npm-global)..."
+# See https://npm.github.io/installation-setup-docs/installing/a-note-on-permissions.html
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+
 echo "Installing Homebrew casks..."
 brew install --cask iterm2
 brew install --cask visual-studio-code
